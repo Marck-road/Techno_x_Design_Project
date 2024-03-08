@@ -1,0 +1,150 @@
+*{
+  scroll-behavior: smooth;
+}
+
+#sdg1, #sdg2 {
+    transition: ease-in-out 0.3s;
+}
+
+#sdg1:hover{
+    color: #1cc7f6;
+    transition: ease 0.3s;
+    font-size: 34px;
+}
+
+#sdg2:hover{
+    color: #FFCF00;
+    transition: ease 0.3s;
+    font-size: 36px;
+}
+
+#sdg1:hover h2{
+  font-size: 34px;
+}
+
+#sdg2:hover h2{
+  font-size: 36px;
+}
+
+#sdg1:hover img{
+  height: 340px;
+  transition: ease 0.3s;
+}
+
+#sdg2:hover img{
+  height: 350px;
+  transition: ease 0.3s;
+}
+
+#text_logo {
+    animation: transitionIn 1s;
+}
+  
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* 
+h4{
+  margin-top: 30px;
+} */
+
+  /* CODE FROM THE SHIT THAT SHOULD NOT SEE THE LIGHT OF DAWN EVER AGAIN
+   
+  Font:
+    Recomms:
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sono">
+  
+    Others:
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Silkscreen">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+
+
+    2 Divs side by side
+    .giftrow{
+      font-size: 26px;
+      color: white;
+      min-height: 300px;
+      width: 90%;
+      background: transparent;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+      justify-items: center;
+      align-items: end;
+      margin-top: 20px;
+      margin-left: 50px;
+      margin-right: 70px;
+    }
+
+    When picture is clicked, it becomes big
+    .gift{
+      height: 250px;
+      width: 300px;
+      float: left;    
+      margin-top: 40px;
+      padding-right: 20px;
+      cursor: pointer;
+      transition: 0.5s
+      }
+
+      Light box is the dark thingy
+      <a href="#light2">
+          <img src="images/silverware.png" class="gift" id="gift2">
+      </a>
+      <a href="#_" class="lightbox" id="light2">
+          <img src="images/silverware.png">
+      </a>
+
+      .lightbox{
+        display: none;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        transition: 0.5s;
+    }
+
+    .lightbox img{
+        max-width: 90%;
+        max-height: 80%;
+        margin-top: 5%;
+        transition: 0.5s;
+    }
+
+    .lightbox:target{
+        outline: none;
+        display: block;
+    }
+
+    big ass div in the center with black bg transparent and border
+    .final_message{
+        color: white;
+        font-size: 28px;
+        text-align: justify;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+        line-height: 40px;
+        background-color: rgba(0,0,0,0.7);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        padding: 10px 20px 10px 20px;
+        border: 4px solid rgb(201, 30, 201);
+        border-radius: 20px;
+    }
+ 
+  
+  */

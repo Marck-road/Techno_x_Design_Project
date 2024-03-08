@@ -3,57 +3,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="public/css/index.css">
     <title>Home</title>
     
 </head>
+
 <body style="background-image: url('assets/images/random_bg.gif'); color: aliceblue;">
 
-<div class="container-fluid d-flex text-center justify-content-center align-items-center" style="height: 100vh;">
-    <h1 class="display-3" id="text_logo">Design x Technopreneurship</h1>
-</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="myNavbar">
+        <a href="#">
+            <img class="navbar-logo d-inline-block" src="assets/images/smol-logo3.png" alt="Bootstrap" height="40px">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active mr-3">
+                    <a class="nav-link" href="#" data-target="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#about-us" data-target="about-us">About Us</a>
+                 </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#team" data-target="team">Team</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#projects" data-target="projects">Projects</a>
+                </li>
+            </ul>
+  
+        </div>
+    </nav>
+
+    <div class="container-fluid d-flex text-center justify-content-center align-items-center" style="height: 90vh;">
+        <img src="assets/images/alt-logo3.png" id="text_logo" style="height: 700px;">
+        <br>
+    </div>
+
+    <!-- Hidden div for navbar navigation -->
+    <div id="about-us" style="height: 10vh;"></div>
+    <hr style="background-color: red;" class="hr-blurry" width="90%">
+
+    <div class="container text-center" style="margin-bottom: 20px; margin-top: 20px; padding-left: 20px; height: 50vh;">
+        <h1 class="h1 text-center">About the Corporation</h1>
+        <div class="justify-content-center align-items-center d-flex flex-column" style="height: 70%;">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia doloremque nemo, reprehenderit labore, distinctio neque, animi excepturi quae tempore iste sequi necessitatibus. Minima doloribus cum voluptatum sunt atque? Eveniet, sunt! 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia doloremque nemo, reprehenderit labore, distinctio neque, animi excepturi quae tempore iste sequi necessitatibus. Minima doloribus cum voluptatum sunt atque? Eveniet, sunt!</p>
+
+        </div>
+
+        <!-- Hidden div for navbar navigation -->
+        <div id="team" style="height: 10vh;"></div>
+    </div>
+
+    <hr style="background-color: red;" class="hr-blurry" width="90%">
+
+    
     
     <div class="container-fluid" style="margin-bottom: 20px; margin-top: 20px;">
-        <h1 class="h1">Meet our Team</h1>
+        <h1 class="h1 text-center">Meet the Team</h1>
 
-        <div class="row"> 
+        <div class="row" style="margin-top: 50px;"> 
             <div class="col text-center">
-                <img src="assets/images/mark.jpg" style="height: 250px; width: 250px; border-radius: 200px;">
-                <h4>Mark Calzada</h4>
-                <h1>hi mark</h1>
+                <img src="assets/images/mark.jpg" style="height: 200px; width: 200px; border-radius: 200px;">
+                <h4>Mark David Calzada</h4>
+                <p>BS Information Technology - 3</p>
             </div>
             <div class="col text-center">
-                <img src="assets/images/xerx.jpg" style="height: 250px; width: 250px; border-radius: 200px;">
+                <img src="assets/images/xerx.jpg" style="height: 200px; width: 200px; border-radius: 200px;">
                 <h4>Xerxes Cuyos</h4>
+                <p>BS Information Technology - 3</p>
             </div>
             <div class="col text-center">
-                <img src="assets/images/gwy.jpg" style="height: 250px; width: 250px; border-radius: 200px;">
+                <img src="assets/images/jayce.png" style="height: 200px; width: 200px; border-radius: 200px;">
+                <h4>Julie Christy Saraosos</h4>
+                <p>BS Information Technology - 3</p>
+
+            </div>
+            <div class="col text-center">
+                <img src="assets/images/gwy.jpg" style="height: 200px; width: 200px; border-radius: 200px;">
                 <h4>Gwyneth Masayon</h4>
-            </div>
-            <div class="col text-center">
-                <img src="assets/images/jayce.png" style="height: 250px; width: 250px; border-radius: 200px;">
-                <h4>Julie Saraosos</h4>
+                <p>BS Information Technology - 3</p>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid" style="height: 90vh; margin-top: 200px;">
-        <h1 class="h1 text-center"  style="margin-bottom: 25px;">Chosen SDGs</h1>
-        <div class="row" style="height: 100%;">
-            <div id="sdg1" class="col d-flex align-items-center justify-content-center text-center" style="border: 1px solid #8CABFF; cursor: pointer;">
-           
-                <h1 id="sdg1_text">SDG 1: Industry, Innovation and Infastructure</h1>
+    <!-- Hidden div for navbar navigation -->
+    <div id="projects" style="height: 8vh;"></div>
+    <hr style="background-color: red;" class="hr-blurry" width="90%">
+
+
+    <div class="container-md" style="height:600px; margin-top: 20px; margin-bottom: 50px;">
+        <h1 class="h1 text-center" style="margin-bottom: 25px;">Our Projects</h1>
+        <div class="row" style="height: 90%;">
+            <div id="sdg1" class="col d-flex text-center flex-column align-items-center justify-content-center" style="cursor: pointer; background-color: #146C94;">
+                <h2 id="sdg1_text" style="transition: font-size 0.3s ease-in-out;">SDG 1: Industry, Innovation and Infastructure</h2>
+                <img src="assets/images/Queuebyte.png" height="60%" style="transition: height 0.3s ease-in-out;">
             </div>
-            
-          <div id="sdg2" class="col d-flex align-items-center justify-content-center text-center" style="border: 1px solid #8CABFF; cursor: pointer;">
-            <h1 id="sdg2_text">SDG 2: Quality Education</h1>
-          </div>
+            <div id="sdg2" class="col d-flex text-center flex-column align-items-center justify-content-center" style="cursor: pointer; background-color: #580C0C; margin-left: 60px;">
+                <h2 id="sdg2_text" style="transition: font-size 0.3s ease-in-out;">SDG 2: Quality Education</h2>
+                <img src="assets/images/Eduops.png" height="330px" style="transition: height 0.3s ease-in-out;">
+            </div>
         </div>
     </div>
+    <!-- <hr style="background-color: red;" class="hr-blurry" width="90%"> -->
+   
    
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-   <script src="javascript/javascript.js"></script>
+    <script src="public/javascript/javascript.js"></script>
 </body>
 </html>
