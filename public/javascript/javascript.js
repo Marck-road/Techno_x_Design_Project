@@ -1,5 +1,9 @@
 document.getElementById("sdg1").addEventListener("click", function() {
-    window.location.href = "public/pages/case_study_1.html";
+    window.location.href = "public/pages/case-study-1.html";
+});
+
+document.getElementById("sdg2").addEventListener("click", function() {
+    window.location.href = "public/pages/case-study-2.html";
 });
 
 

@@ -2,12 +2,20 @@
   scroll-behavior: smooth;
 }
 
+body{
+    font-family: Montserrat;
+}
+
+h1{
+    font-family: Poppins;
+}
+
 #sdg1, #sdg2 {
     transition: ease-in-out 0.3s;
 }
 
 #sdg1:hover{
-    color: #1cc7f6;
+    color: #0f435b;
     transition: ease 0.3s;
     font-size: 34px;
 }
