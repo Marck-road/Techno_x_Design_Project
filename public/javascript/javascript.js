@@ -17,3 +17,5 @@ $(document).ready(function () {
         $(this).closest('.nav-item').addClass('active');
     });
 });
+
+$('.carousel').carousel()
