@@ -142,169 +142,278 @@
           <hr style="background-color: red;" class="hr-blurry">
           <h3>Wireframe Output</h3>
           <div class="ml-5">
-            <p class="h5">1. Landing Page Screen</p>
+            <p class="h5">1. Login Screen</p>
             <ul>
               <li>
-                Accessible by anyone
+                User Landing Page
               </li>
               <li>
-                Logo and navigation bar at the top
+                Logo and client name on top of the form
               </li>
               <li>
-                Navigation bar with the options “Home”, “About Us”, “Track by ID”, and “Register”
+                Form (Fields neede are Email and Password)
               </li>
               <li>
-                Search bar to search for specific establishments
-              </li>
-            <li>
-              Details about the system
-            </li>
-            <li>
-              Benefits of using the system
-            </li>
-            <li>
-              Search bar to track queue information
-            </li>
-            <li>
-              Monthly and Yearly switch for payment of services
-            </li>            
-            <li>
-              Service options with descriptions and price
-            </li>
-            <li>
-                Join us button for establishments to apply to use the system
-            </li>
-            </ul>
-            <p class="h5">2. Apply for Queue Screen</p>
-            <ul>
-              <li>
-                Accessible by anyone
+                Forgot password button to open the Forgot password modal
               </li>
               <li>
-                Logo and navigation bar at the top
+                Login button - redirects to Home Page screen
               </li>
               <li>
-                Navigation bar with the options “Home”, “About Us”, “Track by ID”, and “Register”
+                Link to Register button screen
               </li>
               <li>
-                Logo and name of the establishment on the left side
-              </li>
-              <li>
-                Container  for the current queue number being entertained and the number of people waiting on the bottom left side
-              </li>
-              <li>
-                A divider line in the center
-              </li>
-              <li>
-                A form for inputting email and/or mobile number and purpose for queueing on the top right side with “Confirm” button
-              </li>
-              <li>
-                The queue number the user would get if they confirm their queueing application which would update real-time on the bottom right side
-              </li>
-              <li>
-                A modal will appear displaying the queue id of the person upon confirming their queue
-              </li>
-            </ul>
-            <p class="h5">3. Track Queue Results Screen</p>
-            <ul>
-              <li>
-                Accessible by anyone
-              </li>
-              <li>Logo and navigation bar at the top</li>
-              <li>
-                Navigation bar with the options “Home”, “About Us”, “Track by ID”, and “Register”
-              </li>
-              <li>
-                Search bar to search and track the information of a queue id
-              </li>
-              <li>
-                Logo and name of the establishment on the left side
-              </li>
-              <li>
-                Divider line on the center
-              </li>
-              <li>
-                The user’s queue number on the right side
-              </li>
-              <li>
-                Display of the serving status of all the different account roles of the company
-              </li>
-              <li>
-                Day name, date, and time display at the bottom left
-              </li>
-
-            </ul>
-            <p class="h5">4. Register Company Screen</p>
-            <ul>
-              <li>
-                Accessible by anyone
-              </li>
-              <li>
-                Logo and navigation bar at the top
-              </li>
-              <li>
-                Navigation bar with the options “Home”, “About Us”, “Track by ID”, and “Register”
-              </li>
-              <li>
-                Form to submit company name, email, contact number, domain name, plan selected, and upload the company logo
-              </li>
-              <li>
-                Register button 
-              </li>
-            </ul>
-            <p class="h5">5. Payment Line Screen</p>
-            <ul>
-              <li>
-                Logo and navigation bar at the top
-              </li>
-              <li>
-                Company logo at the top center
-              </li>
-              <li>
-                Text display for redirecting to payment site 
-              </li>
-              <li>
-                Link to redirect to payment site
+                Forgot Password Modal
+                <ul><li>Asks for user's email used to sign up the account</li></ul>
+                <ul><li>Field for the email address</li></ul>
+                <ul><li>Reset Password button</li></ul>
               </li>
             </ul>
 
-            <p class="h5">6. Login Screen</p>
+            <p class="h5">2. Register Screen</p>
             <ul>
               <li>
-                Only for establishments
+                Form 
+                <ul><li>Fields needed are First name, Middle Name, Last Name, Birthdate (month, day, & year), Email, Contact Number, Password, and Confirm Password</li></ul>
               </li>
               <li>
-                Logo and name of the company and “Login” indicator at the top
+                Link to Login screen
               </li>
               <li>
-                A form for inputting username and password with “Login” button to login
+                Submit to button to open the OTP modal
               </li>
               <li>
-                Link to the register account pages
+                OTP Modal
+                <ul><li>Shows a verification message</li></ul>
+                <ul><li>Asks for a 6-digit code that was sent to the user’s email for verification</li></ul>
+                <ul><li>Field for the authentication code</li></ul>
+                <ul><li>Confirm button - redirects to Home Page screen</li></ul>
+                <ul><li>Button to resend code if the user hasn’t received the code</li></ul>
               </li>
             </ul>
-            <p class="h5">7. Register User Screen</p>
+            <p class="h5">3. Home Page Screen (Student)</p>
             <ul>
               <li>
-                Logo and name of the company and page name at the top
+                Navigation bar (navbar) at the top
+                <ul><li>Contents of the navbar are the client logo at the far left, navigation links (“Home”, “Enrollment”, “Grades”, “Payment”, “Documents”) at the center, and notification button and user account drop down at the far right. User account dropdown contains the options “View Profile” and “Logout”</li></ul>
               </li>
               <li>
-                Only for establishments
+                Display all posted announcements and ordered by the most recent time and date
               </li>
               <li>
-                A form to register a new user account with the “Username”, “First Name”, “Last Name”, “Email”, “Password”, and “Role” fields.
-              </li>
-              <li>
-                If the “Others” option is selected in the Role field, a text input field will appear for the user to indicate their custom role.
-              </li>
-              <li>
-                Register button 
-              </li>
-              <li>
-                Link to sign in page
+                A post has the following details:
+                <ul><li>Details of the user who posted the announcement such as their user photo, name, and the department office they belong</li></ul>
+                <ul><li>Post title - this text will be enlarged</li></ul>
+                <ul><li>Body or the content of the post</li></ul>
+                <ul><li>Tag indication whether it is a Global or Broadcast announcement </li></ul>
+                <ul><li>Date and Time announced</li></ul>
               </li>
             </ul>
-            
+            <p class="h5">4. Home Page Screen (Teacher)</p>
+            <ul>
+              <li>
+                Navigation bar (navbar) at the top
+                <ul><li>Contents of the navbar are the client logo at the far left, navigation links (“Home”, “Enrollment”, “Grades”, “Payment”, “Documents”) at the center, and notification button and user account drop down at the far right. User account dropdown contains the options “View Profile” and “Logout”</li></ul>
+              </li>
+              <li>
+                Create an announcement button to open the Create Post modal
+              </li>
+              <li>
+                Display all posted announcements and ordered by the most recent time and date
+              </li>
+              <li>
+                A post has the following details:
+                <ul><li>Details of the user who posted the announcement such as their user photo, name, and the department office they belong</li></ul>
+                <ul><li>Post title - this text will be enlarged</li></ul>
+                <ul><li>Body or the content of the post</li></ul>
+                <ul><li>Tag indication whether it is a Global or Broadcast announcement </li></ul>
+                <ul><li>Date and Time announced</li></ul>
+                <ul><li>If the post is created by the user, a three-dotted vertical menu will appear with the options “Edit post” and “Remove Post”. Clicking the Edit post button will open the Edit Post modal</li></ul>
+              </li>
+              <li>
+                Create & Edit post modal:
+                <ul><li>Back button </li></ul>
+                <ul><li>Form
+                  <ul><li>Fields needed are Post Title and Content                  </li></ul>
+                  <ul><li>Broadcast announcement tag</li></ul>
+                  <ul><li>Icon buttons to add image, attach files, and insert emoticons in the content.                  </li></ul>
+                  <ul><li>Send a copy dropdown with options “Email Recipients”, “Push Notification”, and “Both”</li></ul>
+                </li></ul>
+                <ul><li>Cancel and Create button</li></ul>
+                <ul><li>If the fields of the form contain values and the user attempts to exit the modal, the discard changes confirmation message will pop up.</li></ul>
+                <ul><li>Create Post modal can be closed when clicking outside while Edit Post modal cannot and stays on the user’s screen. The only way to close the Edit Post modal is through the Back, Cancel, and Confirm button.</li></ul>
+              </li>
+            </ul>
+            <p class="h5">5. Home Page (Admin)</p>
+            <ul>
+              <li>
+                Navigation bar (navbar) at the top
+                <ul>
+                  <li>
+                    Contents of the navbar are the client logo at the far left, navigation links (“Home”, “Enrollment”, “Grades”, “Payment”, “Documents”,”Accounts”) at the center, and notification button and user account drop down at the far right. User account dropdown contains the options “View Profile” and “Logout”
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Create an announcement button to open the Create Post modal
+              </li>
+              <li>
+                Display all posted announcements and ordered by the most recent time and date
+              </li>
+              <li>
+                A post has the following details:
+                <ul>
+                  <li>
+                    Details of the user who posted the announcement such as their user photo, name, and the department office they belong
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Post title - this text will be enlarged
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Body or the content of the post
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Tag indication whether it is a Global or Broadcast announcement 
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Date and Time announced
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    A three-dotted vertical menu with the options “Delete post” and “Hide Post”. If the post is created by the user, another option called “Edit post” will appear. Clicking the Edit post button will open the Edit Post modal
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Create & Edit Post modal:
+                <ul>
+                  <li>
+                    Back button 
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Form
+                    <ul>
+                      <li>
+                        Fields needed are Post Title and Content
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        Global announcement tag but can be clickable to change its value to Broadcast announcement
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        Icon buttons to add image, attach files, and insert emoticons in the content.
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        Send a copy dropdown with options “Email Recipients”, “Push Notification”, and “Both”
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    Cancel and Create button
+                  </li>
+                  <li>
+                    If the fields of the form contain values and the user attempts to exit the modal, the discard changes confirmation message will pop up.
+                  </li>
+                  <li>
+                    Create Post modal can be closed when clicking outside while Edit Post modal cannot and stays on the user’s screen. The only way to close the Edit Post modal is through the Back, Cancel, and Confirm button
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p class="h5">6. Enrollment Form Screen</p>
+            <ul>
+              <li>
+                Only accessible by students through the navigation bar “Enrollment” > “Student Admission”
+              </li>
+              <li>
+                Will only display if ever the user has not yet filled out the Enrollment Form. This is to ensure that users cannot fill out the form multiple times and avoid duplicated information in the system
+              </li>
+              <li>
+                Navigation bar for students at the top
+              </li>
+              <li>
+                Form
+                <ul>
+                  <li>
+                    Fields needed are Age, Civil Status, and Address 
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Preferred course dropdown 
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Next button - redirects to Maya Payment Form screen
+              </li>
+            </ul>
+            <p class="h5">7. Enrollment Status Screen</p>
+            <ul>
+              <li>
+                Only accessible by students through the navigation bar “Enrollment” > “Student Admission”
+              </li>
+              <li>
+                Will only display if the user has submitted the Enrollment Form
+              </li>
+              <li>
+                Navigation bar for students at the top
+              </li>
+              <li>
+                Displays the enrollment status whether Pending or Completed
+              </li>
+              <li>
+                Displays the user’s current step in their enrollment
+                <ul>
+                  <li>
+                    Enrollment Form
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Payment Form
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Verification
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Revision
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Completed
+                  </li>
+                </ul>
+              </li>
+              <li>
+                If the user is in the Payment Form step, “Click here to proceed to payment.” message displays below to redirect user to the Maya Payment Form screen
+              </li>
+              <li>
+                Displays the administrator contact informations like contact number and email address
+              </li>
+            </ul>
 
           </div>
           
