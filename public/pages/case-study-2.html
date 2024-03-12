@@ -489,14 +489,358 @@
               </li>
             </ul>
             <p class="h5">8. Enrollment: View Schedule Screen</p>
-            <p class="h5">9. Enrollment Status Screen</p>
-            <p class="h5">10. Enrollment Status Screen</p>
-            <p class="h5">11. Enrollment Status Screen</p>
-            <p class="h5">12. Enrollment Status Screen</p>
-            <p class="h5">13. Enrollment Status Screen</p>
-            <p class="h5">14. Enrollment Status Screen</p>
-            <p class="h5">15. Enrollment Status Screen</p>
-            <p class="h5">16. Enrollment Status Screen</p>
+            <ul>
+              <li>
+                Navigation bar at the top
+              </li>
+              <li>
+                Settings, Next, and Previous button
+              </li>
+              <li>
+                Admin side: Robot button for admins to get assisted with AI (chat) to create a schedule plot with available teachers and rules/guidelines.
+              </li>
+              <li>
+                Year and Month dropdown for filtering
+              </li>
+              <li>
+                Switch button to view between Month and Week. Once clicked, the user is redirected to the View Schedule by Week screen.
+              </li>
+              <li>
+                Displays the student’s schedule in a calendar view by month. Can click each tile to open the Date Select Modal
+              </li>
+              <li>
+                Date Select Modal:
+              </li>
+                <ul>
+                  <li>
+                    Close button
+                  </li>
+                  <li>
+                    Displays a table with the time as the table header
+                  </li>
+                  <li>
+                    Event tiles that can be clicked to open the Event Select Modal
+                  </li>
+                  <li>
+                    Event Select Modal:
+                  </li>
+                  <ul>
+                    <li>
+                      Close button
+                    </li>
+                    <li>
+                      Displays event information like Event Title, Event Location, Time, Organizer, and Notes
+                    </li>
+                    <li>
+                      Students and Teachers cannot edit the event information, only admins.
+                    </li>
+                    <li>
+                      Student side: View Classmates button to open the View Classmates modal
+                    </li>
+                    <li>
+                      View Classmates modal:
+                      <ul>
+                        <li>
+                          Close button
+                        </li>
+                        <li>
+                          Displays the Course, Event Time, and a table of student names
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Teacher and Admin side: View Students button to open the View Students modal
+                    </li>
+                    <li>
+                      View Students modal:
+                      <ul>
+                        <li>
+                          Close button
+                        </li>
+                        <li>
+                          Displays the Course, Event Time, and a table of student information like student id,  name and email
+                        </li>
+                        <li>
+                          Download CSV button
+                        </li>
+                        <li>
+                          Admin side: contains search bar to search by name, id, or email, add button, and import csv button
+                        </li>
+                      </ul>
+                      <li>
+                        In admin side: there is Save Event and Delete Event button
+                      </li>
+                    </li>
+                  </ul>
+                </ul>
+            </ul>
+            <p class="h5">9. Enrollment: View Schedule by Week Screen</p>
+            <ul>
+              <li>
+                Navigation bar for students at the top
+              </li>
+              <li>
+                Settings, Next, and Previous button
+              </li>
+              <li>
+                Admin side: Robot button for admins to get assisted with AI (chat) to create a schedule plot with available teachers and rules/guidelines.
+              </li>
+              <li>
+                Year and Month dropdown for filtering
+              </li>
+              <li>
+                Switch button to view between Month and Week. Once clicked, the user is redirected to the View Schedule screen.
+              </li>
+              <li>
+                Displays the student’s schedule in a calendar view by week. Can click each tile to open the Date Select Modal
+              </li>
+            </ul>
+            <p class="h5">10. Teaching Load Screen</p>
+            <ul>
+              <li>
+                Only accessible by teachers
+              </li>
+              <li>
+                Navigation bar for teachers at the top
+              </li>
+              <li>
+                Shows the name of the user
+              </li>
+              <li>
+                Displays a table with informations like Course, Schedule, Room, Number of Hours, Number of students
+              </li>
+              <li>
+                View students button at every row of the table body to open the List of Students modal
+              </li>
+              <li>
+                List of Students modal:
+              </li>
+              <ul>
+                <li>
+                  Close button
+                </li>
+                <li>
+                  Displays the Course, Event Time, and a table of student information like student id,  name and email
+                </li>
+                <li>
+                  Download CSV button
+                </li>
+              </ul>
+            </ul>
+
+            <p class="h5">11. Study Load Screen</p>
+            <ul>
+              <li>
+                Only accessible by students
+              </li>
+              <li>
+                Navigation bar for students at the top
+              </li>
+              <li>
+                Batch and Year drop down to filter student’s course
+              </li>
+              <li>
+                Search Button
+              </li>
+              <li>
+                Shows the name of the user
+              </li>
+              <li>
+                Displays a table with informations like Course, Schedule, Adviser, Number of Hours, and Room
+              </li>
+              
+            </ul>
+            <p class="h5">12. Course Assignment Screen</p>
+            <ul>
+              <li>
+                Only for administrator
+              </li>
+              <li>
+                Navigation bar at the top
+              </li>
+              <li>
+                Table to show the list of available courses that are available
+              </li>
+              <li>
+                Displays information about each course such as their course id, course name, amount of students, schedule, category, and adviser
+              </li>
+              <li>
+                Button at the bottom-right that opens a modal to allow the user to create a new course 
+              </li>
+              <li>
+                Search field
+              </li>
+              <li>
+                Create course Modal
+              </li>
+              <ul>
+                <li>
+                  Course creation title
+                </li>
+                <li>
+                  Has the fields “Course ID”, “Course Name”, “# of Students”, “Category”, and “Schedule”
+                </li>
+                <li>
+                  Submit button
+                </li>
+                <li>
+                  Exit button Modal
+                </li>
+                <ul>
+                  <li>
+                    Cancel button
+                  </li>
+                  <li>
+                    Discard button
+                  </li>
+                </ul>
+              </ul>
+            </ul>
+            <p class="h5">13. Assessment Screen</p>
+            <ul>
+              <li>
+                Navigation bar at the top
+              </li>
+              <li>
+                Students can search their tuition fee assessment by the following drop downs:
+              </li>
+              <ul>
+                <li>
+                  Course
+                </li>
+                <li>
+                  Batch
+                </li>
+                <li>
+                  Year
+                </li>
+              </ul>
+              <li>
+                Admin view: Teachers can search a student’s tuition fee assessment by the following drop downs:
+              </li>
+              <ul>
+                <li>
+                  Name
+                </li>
+                <li>
+                  Batch
+                </li>
+                <li>
+                  Course
+                </li>
+                <li>
+                  Year
+                </li>
+              </ul>
+              <li>
+                Search Button
+              </li>
+              <li>
+                Displays a table that shows the list of fees a student has
+              </li>
+              <li>
+                Displays information such as “Description”, “Amount”, “Net Assessment”, “Total Payments”, “Remaining Balance”
+              </li>
+              <li>
+                Admin side:
+              </li>
+              <ul>
+                <li>
+                  Edit amount button and undo amount button
+                </li>
+                <li>
+                  Discard Modal
+                </li>
+                <ul>
+                  <li>
+                    Cancel button
+                  </li>
+                  <li>
+                    Discard button
+                  </li>
+                </ul>
+                <li>
+                  Confirm Modal
+                </li>
+                <ul>
+                  <li>
+                    Cancel button
+                  </li>
+                  <li>
+                    Discard button
+                  </li>
+                </ul>
+              </ul>
+              <li>
+                Transaction History Button which opens up the transaction history the student has made during that specific period
+              </li>
+              <li>
+                Transaction History Modal:
+              </li>
+              <ul>
+                <li>
+                  Displays a table of all transactions together with its information such as:
+                </li>
+                <ul>
+                  <li>
+                    Date Paid
+                  </li>
+                  <li>
+                    Amount
+                  </li>
+                  <li>
+                    Payment Method
+                  </li>
+                  <li>
+                    Remarks
+                  </li>
+                  <li>
+                    Status 
+                  </li>
+                </ul>
+                <li>
+                  Exit button
+                </li>
+              </ul>
+              <li>
+                Ledger Button
+              </li>
+              <li>
+                Student view: Proceed to Payment button
+              </li>
+            </ul>
+            <p class="h5">14. Ledger Screen</p>
+            <ul>
+              
+            </ul>
+            <p class="h5">15. Payment Screen</p>
+            <ul>
+              
+            </ul>
+            <p class="h5">16. Payment Redirect Screen</p>
+            <ul>
+              
+            </ul>
+            <p class="h5">17. User Profile Screen</p>
+            <ul>
+              
+            </ul>
+            <p class="h5">18. Staff Register Screen</p>
+            <ul>
+              
+            </ul>
+            <p class="h5">19. Enrollment Requests Screen</p>
+            <ul>
+              
+            </ul>
+            <p class="h5">20. View User Accounts Screen</p>
+            <ul>
+              
+            </ul>
+            <p class="h5">21. Manage User Screen</p>
+            <ul>
+              
+            </ul>
 
           </div>
           
