@@ -248,10 +248,15 @@
                 User Landing Page
               </li>
               <li>
-                Logo and client name on top of the form
+                Logo and client’s establishment name on top of the form
               </li>
               <li>
-                Form (Fields neede are Email and Password)
+                Form
+                <ul>
+                  <li>
+                    Fields neede are Email and Password
+                  </li>
+                </ul>
               </li>
               <li>
                 Forgot password button to open the Forgot password modal
@@ -264,12 +269,15 @@
               </li>
               <li>
                 Forgot Password Modal
-                <ul><li>Asks for user's email used to sign up the account</li></ul>
-                <ul><li>Field for the email address</li></ul>
-                <ul><li>Reset Password button</li></ul>
+                <ul>
+                  <li>Asks for user's email used to sign up the account</li>
+                  <li>Field for the email address</li>
+                  <li>Reset Password button</li>
+                </ul>
               </li>
+              
             </ul>
-
+            <p>NOTE: Clicking the Reset Password button will not directly redirect the user to the Reset Password Link screen, but it is a screen that administrators will only give to the student’s email as a link. For now, it is only directly redirected to the Reset Password Link screen to show the screen’s design. </p>
             <p class="h5">2. Register Screen</p>
             <ul>
               <li>
@@ -284,14 +292,30 @@
               </li>
               <li>
                 OTP Modal
-                <ul><li>Shows a verification message</li></ul>
-                <ul><li>Asks for a 6-digit code that was sent to the user’s email for verification</li></ul>
-                <ul><li>Field for the authentication code</li></ul>
-                <ul><li>Confirm button - redirects to Home Page screen</li></ul>
-                <ul><li>Button to resend code if the user hasn’t received the code</li></ul>
+                <ul>
+                  <li>Shows a verification message</li>
+                  <li>Asks for a 6-digit code that was sent to the user’s email for verification</li>
+                  <li>Field for the authentication code</li>
+                  <li>Confirm button - redirects to Home Page screen</li>
+                   <li>Button to resend code if the user hasn’t received the code</li>
+                </ul>
               </li>
             </ul>
-            <p class="h5">3. Home Page Screen (Student)</p>
+            <p class="h5">3. Reset Password Link Screen</p>
+            <ul>
+              <li>
+                Form
+              </li>
+              <ul>
+                <li>
+                  Fields needed are New Password and Confirm Password
+                </li>
+                <li>
+                  Confirm button that will successfully change the password and redirects the user to the Login Screen
+                </li>
+              </ul>
+            </ul>
+            <p class="h5">4. Home Page Screen (Student)</p>
             <ul>
               <li>
                 Navigation bar (navbar) at the top
@@ -309,7 +333,7 @@
                 <ul><li>Date and Time announced</li></ul>
               </li>
             </ul>
-            <p class="h5">4. Home Page Screen (Teacher)</p>
+            <p class="h5">5. Home Page Screen (Teacher)</p>
             <ul>
               <li>
                 Navigation bar (navbar) at the top
@@ -323,28 +347,54 @@
               </li>
               <li>
                 A post has the following details:
-                <ul><li>Details of the user who posted the announcement such as their user photo, name, and the department office they belong</li></ul>
-                <ul><li>Post title - this text will be enlarged</li></ul>
-                <ul><li>Body or the content of the post</li></ul>
-                <ul><li>Tag indication whether it is a Global or Broadcast announcement </li></ul>
-                <ul><li>Date and Time announced</li></ul>
-                <ul><li>If the post is created by the user, a three-dotted vertical menu will appear with the options “Edit post” and “Remove Post”. Clicking the Edit post button will open the Edit Post modal</li></ul>
+                <ul>
+                  <li>Details of the user who posted the announcement such as their user photo, name, and the department office they belong</li>
+                  <li>Post title - this text will be enlarged</li>
+                  <li>Body or the content of the post</li>
+                  <li>Tag indication whether it is a Global or Broadcast announcement </li>
+                  <li>Date and Time announced</li>
+                  <li>If the post is created by the user, a three-dotted vertical menu will appear with the options “Edit post” and “Remove Post”. Clicking the Edit post button will open the Edit Post modal</li>
+                </ul>
               </li>
               <li>
                 Create & Edit post modal:
-                <ul><li>Back button </li></ul>
-                <ul><li>Form
-                  <ul><li>Fields needed are Post Title and Content                  </li></ul>
-                  <ul><li>Broadcast announcement tag</li></ul>
-                  <ul><li>Icon buttons to add image, attach files, and insert emoticons in the content.                  </li></ul>
-                  <ul><li>Send a copy dropdown with options “Email Recipients”, “Push Notification”, and “Both”</li></ul>
-                </li></ul>
-                <ul><li>Cancel and Create button</li></ul>
-                <ul><li>If the fields of the form contain values and the user attempts to exit the modal, the discard changes confirmation message will pop up.</li></ul>
-                <ul><li>Create Post modal can be closed when clicking outside while Edit Post modal cannot and stays on the user’s screen. The only way to close the Edit Post modal is through the Back, Cancel, and Confirm button.</li></ul>
+                <ul>
+                  <li>
+                    Back button 
+                  </li>
+                  <li>
+                    Form
+                  </li>
+                  <ul>
+                    <li>
+                      Field needed is Post Content, while Post Title is optional
+                    </li>
+                    <li>
+                      Broadcast announcement tag
+                    </li>
+                    <li>
+                      Icon buttons to add images, attach files, and insert emoticons in the content.
+                    </li>
+                    <li>
+                      Send a copy dropdown with options “Email Recipients”, “Push Notification”, and “Both”
+                    </li>
+                  </ul>
+                  <li>
+                    Cancel and Create button
+                  </li>
+                  <li>
+                    If the fields of the form contain values and the user attempts to exit the modal without saving the post, the discard changes confirmation message will pop up.
+                  </li>
+                  <li>
+                    The Edit Post modal will reflect and contain values in the form fields based on which post content the user chose to edit.
+                  </li>
+                  <li>
+                    The Create Post modal can be closed when clicking outside while the Edit Post modal cannot and stays on the user’s screen. The only way to close the Edit Post modal is through the Back, Cancel, and Confirm button.
+                  </li>
+                </ul>
               </li>
             </ul>
-            <p class="h5">5. Home Page (Admin)</p>
+            <p class="h5">6. Home Page Screen (Admin)</p>
             <ul>
               <li>
                 Navigation bar (navbar) at the top
@@ -356,6 +406,9 @@
               </li>
               <li>
                 Create an announcement button to open the Create Post modal
+              </li>
+              <li>
+                Archives button to redirect the user to the Archived Posts screen.
               </li>
               <li>
                 Display all posted announcements and ordered by the most recent time and date
@@ -395,55 +448,88 @@
               </li>
               <li>
                 Create & Edit Post modal:
+              <ul>
+                <li>
+                  Back button 
+                </li>
+                <li>
+                  Form
+                </li>
                 <ul>
                   <li>
-                    Back button 
+                    Field needed is Post Content, while Post Title is optional
+                  </li>
+                  <li>
+                    Global announcement tag but can be clickable to change its value to Broadcast announcement
+                  </li>
+                  <li>
+                    Icon buttons to add images, attach files, and insert emoticons in the content.
+                  </li>
+                  <li>
+                    Send a copy dropdown with options “Email Recipients”, “Push Notification”, and “Both”
                   </li>
                 </ul>
+                <li>
+                  Cancel and Create button
+                </li>
+                <li>
+                  If the fields of the form contain values and the user attempts to exit the modal without saving the post, the discard changes confirmation message will pop up.
+                </li>
+                <li>
+                  The Edit Post modal will reflect and contain values in the form fields based on which post content the user chose to edit.
+                </li>
+                <li>
+                  The Create Post modal can be closed when clicking outside while the Edit Post modal cannot and stays on the user’s screen. The only way to close the Edit Post modal is through the Back, Cancel, and Confirm button.
+                </li>
+              </ul>
+                
+              </li>
+            </ul>
+            <p class="h5">7. Archived Posts Screen </p>
+            <ul>
+              <li>
+                Only accessible by administrators through the Archives button in the Home Page screen
+              </li>
+              <li>
+                Go Back button to redirect the user back to the Home Page screen
+              </li>
+              <li>
+                “Archived Posts” title indicator
+              </li>
+              <li>
+                Displays all hidden announcements and ordered by the most recent time and date created
+              </li>
+              <li>
+                A post has the following details:
                 <ul>
                   <li>
-                    Form
-                    <ul>
-                      <li>
-                        Fields needed are Post Title and Content
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        Global announcement tag but can be clickable to change its value to Broadcast announcement
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        Icon buttons to add image, attach files, and insert emoticons in the content.
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        Send a copy dropdown with options “Email Recipients”, “Push Notification”, and “Both”
-                      </li>
-                    </ul>
-                  </li>
-                  
-                  <li>
-                    Cancel and Create button
+                    Details of the user who posted the announcement such as their user photo, name, and the department office they belong
                   </li>
                   <li>
-                    If the fields of the form contain values and the user attempts to exit the modal, the discard changes confirmation message will pop up.
+                    Post title - this text will be enlarged
                   </li>
                   <li>
-                    Create Post modal can be closed when clicking outside while Edit Post modal cannot and stays on the user’s screen. The only way to close the Edit Post modal is through the Back, Cancel, and Confirm button
+                    Body or the content of the post
+                  </li>
+                  <li>
+                    Tag indication whether it is a Global or Broadcast announcement 
+                  </li>
+                  <li>
+                    Date and Time announced
+                  </li>
+                  <li>
+                    A three-dotted vertical menu with the options “Unhide post” and “Delete Post”
                   </li>
                 </ul>
               </li>
             </ul>
-            <p class="h5">6. Enrollment Form Screen</p>
+            <p class="h5">8. Enrollment Form Screen</p>
             <ul>
               <li>
                 Only accessible by students through the navigation bar “Enrollment” > “Student Admission”
               </li>
               <li>
-                Will only display if ever the user has not yet filled out the Enrollment Form. This is to ensure that users cannot fill out the form multiple times and avoid duplicated information in the system
+                The user will only be redirected to this screen if ever they have not yet filled out the Enrollment Form. This is to ensure that users cannot fill out the form multiple times and avoid duplicated information in the system
               </li>
               <li>
                 Navigation bar for students at the top
@@ -465,13 +551,13 @@
                 Next button - redirects to Maya Payment Form screen
               </li>
             </ul>
-            <p class="h5">7. Enrollment Status Screen</p>
+            <p class="h5">9. Enrollment Status Screen</p>
             <ul>
               <li>
                 Only accessible by students through the navigation bar “Enrollment” > “Student Admission”
               </li>
               <li>
-                Will only display if the user has submitted the Enrollment Form
+                The user will only be redirected to this screen if they submitted the Enrollment Form
               </li>
               <li>
                 Navigation bar for students at the top
@@ -485,25 +571,17 @@
                   <li>
                     Enrollment Form
                   </li>
-                </ul>
-                <ul>
                   <li>
                     Payment Form
                   </li>
-                </ul>
-                <ul>
                   <li>
                     Verification
                   </li>
-                </ul>
-                <ul>
                   <li>
-                    Revision
+                    Revisions
                   </li>
-                </ul>
-                <ul>
                   <li>
-                    Completed
+                    Complete
                   </li>
                 </ul>
               </li>
@@ -514,7 +592,10 @@
                 Displays the administrator contact informations like contact number and email address
               </li>
             </ul>
-            <p class="h5">8. Enrollment: View Schedule Screen</p>
+            <p>
+              NOTE: Clicking the Enrollment Status container, will not change the student’s enrollment status from complete to pending or vice versa. This is just to show the screen’s design difference between a Completed Enrollment Status and a Pending Enrollment Status. 
+            </p>
+            <p class="h5">10. Enrollment: View Schedule Screen</p>
             <ul>
               <li>
                 Navigation bar at the top
@@ -523,8 +604,7 @@
                 Settings, Next, and Previous button
               </li>
               <li>
-                Admin side: Robot button for admins to get assisted with AI (chat) to create a schedule plot with available teachers and rules/guidelines.
-              </li>
+                ADMIN SIDE: Robot button for admins to get assisted with AI (chat) to create a schedule plot with available teachers and rules/guidelines.              </li>
               <li>
                 Year and Month dropdown for filtering
               </li>
@@ -532,24 +612,23 @@
                 Switch button to view between Month and Week. Once clicked, the user is redirected to the View Schedule by Week screen.
               </li>
               <li>
-                Displays the student’s schedule in a calendar view by month. Can click each tile to open the Date Select Modal
+                Displays the schedule in a calendar view by month. Can click each tile to open the Date Select Modal
               </li>
               <li>
                 Date Select Modal:
               </li>
-                <ul>
-                  <li>
-                    Close button
-                  </li>
-                  <li>
-                    Displays a table with the time as the table header
-                  </li>
-                  <li>
-                    Event tiles that can be clicked to open the Event Select Modal
-                  </li>
-                  <li>
-                    Event Select Modal:
-                  </li>
+              <ul>
+                <li>
+                  Close button
+                </li>
+                <li>
+                  Displays a table with the time as the table header
+                </li>
+                <li>
+                  Event tiles that can be clicked to open the Event Select Modal
+                </li>
+                <li>
+                  Event Select Modal:
                   <ul>
                     <li>
                       Close button
@@ -558,10 +637,19 @@
                       Displays event information like Event Title, Event Location, Time, Organizer, and Notes
                     </li>
                     <li>
+                      ADMIN SIDE: Also displays a Repeat field info
+                    </li>
+                    <li>
                       Students and Teachers cannot edit the event information, only admins.
                     </li>
                     <li>
-                      Student side: View Classmates button to open the View Classmates modal
+                      ADMIN SIDE: Color palette button to change the event tile’s color
+                    </li>
+                    <li>
+                      ADMIN SIDE: Save Event and Delete Event button. Clicking the Save Event button shows the Save Notification message. While clicking the Delete  Event button displays the Discard Event confirmation message.
+                    </li>
+                    <li>
+                      STUDENT SIDE: View Classmates button to open the View Classmates modal
                     </li>
                     <li>
                       View Classmates modal:
@@ -575,42 +663,39 @@
                       </ul>
                     </li>
                     <li>
-                      Teacher and Admin side: View Students button to open the View Students modal
+                      TEACHER and ADMIN SIDE: View Students button to open the View Students modal
                     </li>
                     <li>
                       View Students modal:
-                      <ul>
-                        <li>
-                          Close button
-                        </li>
-                        <li>
-                          Displays the Course, Event Time, and a table of student information like student id,  name and email
-                        </li>
-                        <li>
-                          Download CSV button
-                        </li>
-                        <li>
-                          Admin side: contains search bar to search by name, id, or email, add button, and import csv button
-                        </li>
-                      </ul>
-                      <li>
-                        In admin side: there is Save Event and Delete Event button
-                      </li>
                     </li>
+                    <ul>
+                      <li>
+                        Close button
+                      </li>
+                      <li>
+                        Displays the Course, Event Time, and a table of student information like student id,  name and email
+                      </li>
+                      <li>
+                        Download CSV/List button
+                      </li>
+                      <li>
+                        ADMIN SIDE: Contains an Import CSV button, search bar to search a student by name, id, or email, and add button at the top of the table 
+                      </li>
+                    </ul>
                   </ul>
-                </ul>
+                </li>
+              </ul>
             </ul>
-            <p class="h5">9. Enrollment: View Schedule by Week Screen</p>
+            <p class="h5">11. Enrollment: View Schedule by Week Screen</p>
             <ul>
               <li>
-                Navigation bar for students at the top
+                Navigation bar at the top
               </li>
               <li>
                 Settings, Next, and Previous button
               </li>
               <li>
-                Admin side: Robot button for admins to get assisted with AI (chat) to create a schedule plot with available teachers and rules/guidelines.
-              </li>
+                ADMIN SIDE: Robot button for admins to get assisted with AI (chat) to create a schedule plot with available teachers and rules/guidelines.              </li>
               <li>
                 Year and Month dropdown for filtering
               </li>
@@ -618,10 +703,10 @@
                 Switch button to view between Month and Week. Once clicked, the user is redirected to the View Schedule screen.
               </li>
               <li>
-                Displays the student’s schedule in a calendar view by week. Can click each tile to open the Date Select Modal
+                Displays the schedule in a calendar view by week. Can click each tile to open the Date Select Modal
               </li>
             </ul>
-            <p class="h5">10. Teaching Load Screen</p>
+            <p class="h5">12. Teaching Load Screen</p>
             <ul>
               <li>
                 Only accessible by teachers
@@ -653,8 +738,7 @@
                 </li>
               </ul>
             </ul>
-
-            <p class="h5">11. Study Load Screen</p>
+            <p class="h5">13. Study Load Screen</p>
             <ul>
               <li>
                 Only accessible by students
@@ -676,106 +760,94 @@
               </li>
               
             </ul>
-            <p class="h5">12. Course Assignment Screen</p>
+            <p class="h5">14. Course Assignment Screen</p>
             <ul>
               <li>
-                Only for administrator
+                Only accessible by administrators
               </li>
               <li>
-                Navigation bar at the top
+                Navigation bar for admins at the top
               </li>
               <li>
-                Table to show the list of available courses that are available
+                Table to show the list of all courses
               </li>
               <li>
-                Displays information about each course such as their course id, course name, amount of students, schedule, category, and adviser
+                Displays information about each course such as their Course ID, Course Name, Number of Students, Schedule, Category, Adviser and Status
               </li>
               <li>
-                Button at the bottom-right that opens a modal to allow the user to create a new course 
+                Edit button at each row of the table body to open the Update Course Modal
               </li>
               <li>
-                Search field
+                Create Course button at the upper-left above the table to open the Course Creation modal to allow the admin to create a new course 
               </li>
               <li>
-                Create course Modal
+                Search field and button at the upper right above the table to search for a course
+              </li>
+              <li>
+                Course Creation and Update Course Modal
               </li>
               <ul>
                 <li>
-                  Course creation title
+                  Close button
                 </li>
                 <li>
-                  Has the fields “Course ID”, “Course Name”, “# of Students”, “Category”, and “Schedule”
+                  Fields needed are Course ID, Course Name, Number of Students, Category, Adviser, and Schedule
                 </li>
                 <li>
-                  Submit button
+                  Submit button to show a successful course creation/update notification message
                 </li>
                 <li>
-                  Exit button Modal
+                  The Update Course modal will reflect and contain values in the form fields based on which course the admin chose to edit.
                 </li>
-                <ul>
-                  <li>
-                    Cancel button
-                  </li>
-                  <li>
-                    Discard button
-                  </li>
-                </ul>
+                <li>
+                  If the fields of the form contain values and the admin attempts to exit the modal without submitting the form, the discard changes confirmation message will pop up.
+                </li>
+                <li>
+                  The Course Creation modal can be closed when clicking outside, while the Update Course modal cannot and stays on the user’s screen. The only way to close the Update Course modal is through the Close and Submit button.
+                </li>
               </ul>
+
             </ul>
-            <p class="h5">13. Assessment Screen</p>
+            <p class="h5">15. Assessment Screen</p>
             <ul>
               <li>
                 Navigation bar at the top
               </li>
               <li>
-                Students can search their tuition fee assessment by the following drop downs:
+                A form to search the student’s tuition fee assessment
               </li>
               <ul>
                 <li>
-                  Course
+                  Course, Batch, and Year dropdown
                 </li>
                 <li>
-                  Batch
-                </li>
-                <li>
-                  Year
-                </li>
-              </ul>
-              <li>
-                Admin view: Teachers can search a student’s tuition fee assessment by the following drop downs:
-              </li>
-              <ul>
-                <li>
-                  Name
-                </li>
-                <li>
-                  Batch
-                </li>
-                <li>
-                  Course
-                </li>
-                <li>
-                  Year
+                  ADMIN SIDE: Another field is needed for Name
                 </li>
               </ul>
               <li>
                 Search Button
               </li>
               <li>
-                Displays a table that shows the list of fees a student has
+                Transaction History button to open the Transaction History Modal during that specific period
               </li>
               <li>
-                Displays information such as “Description”, “Amount”, “Net Assessment”, “Total Payments”, “Remaining Balance”
+                Ledger Button to redirect user to the Ledger screen
               </li>
               <li>
-                Admin side:
+                Displays a table that shows the list of fees a student has for the specific period searched such as “Description”, “Amount”, “Net Assessment”, “Total Payments”, and “Remaining Balance”
+              </li>
+              <li>
+                ADMIN SIDE:
               </li>
               <ul>
                 <li>
-                  Edit amount button and undo amount button
+                  Edit amount button and Undo amount button to adjust fees of the student
                 </li>
                 <li>
-                  Discard Modal
+                  The Discard and Confirm button will appear once the Edit button is clicked
+                </li>
+                <li>
+                  A Discard Changes modal shows if the user leaves the Assessment screen or clicks on the Discard button
                 </li>
                 <ul>
                   <li>
@@ -786,20 +858,22 @@
                   </li>
                 </ul>
                 <li>
-                  Confirm Modal
+                  A confirm for saved changes modal will appear if the user presses the Confirm button
                 </li>
                 <ul>
                   <li>
                     Cancel button
                   </li>
                   <li>
-                    Discard button
+                    Confirm button
                   </li>
                 </ul>
               </ul>
               <li>
-                Transaction History Button which opens up the transaction history the student has made during that specific period
+                STUDENT SIDE: Proceed to Payment button to redirect user to the Maya Payment Form screen
               </li>
+
+             
               <li>
                 Transaction History Modal:
               </li>
@@ -828,18 +902,26 @@
                   Exit button
                 </li>
               </ul>
-              <li>
-                Ledger Button
-              </li>
-              <li>
-                Student view: Proceed to Payment button
-              </li>
             </ul>
-            <p class="h5">14. Ledger Screen</p>
+            <p class="h5">16. Ledger Screen</p>
             <ul>
               <li>
                 Navigation bar at the top
               </li>
+              <li>
+                ADMIN SIDE: A form to search for a student's ledger
+              </li>
+              <ul>
+                <li>
+                  Field needed is Name
+                </li>
+                <li>
+                  Course, Batch, and Year dropdown
+                </li>
+                <li>
+                  Search button
+                </li>
+              </ul>
               <li>
                 Displays the name of the student
               </li>
@@ -847,16 +929,16 @@
                 Print Ledger button which allows the user to print a pdf copy of their ledger
               </li>
               <li>
-                Displays information such as “Date”, “Time”, “Payment Method”, “Balance”, “Type”, “Remarks”
+                Displays a table with information such as “Date”, “Time”, “Payment Method”, “Balance”, “Type”, and “Remarks”
               </li>
             </ul>
-            <p class="h5">15. Payment Screen</p>
+            <p class="h5">17. Maya Payment Screen</p>
             <ul>
               <li>
                 Only accessible by students
               </li>
               <li>
-                Navigation bar at the top
+                Navigation bar for students at the top
               </li>
               <li>
                 Displays aMaya Payment Form with the following fields:
@@ -878,17 +960,17 @@
                   Phone Number
                 </li>
                 <li>
+                  Dropdown for type of fees
+                </li>
+                <li>
                   Amount
                 </li>
               </ul>
               <li>
-                Dropdown for type of fees.
-              </li>
-              <li>
-                Submit button
+                Submit button to redirect the user to the Redirect to Maya screen
               </li>
             </ul>
-            <p class="h5">16. Payment Redirect Screen</p>
+            <p class="h5">18. Redirect to Maya Screen</p>
             <ul>
               <li>
                 Only accessible by students
@@ -897,99 +979,28 @@
                 Logo
               </li>
               <li>
-                Text display for redirecting to payment site 
+                Text display instruction for redirecting user to the payment site 
               </li>
               <li>
-                Link to redirect to payment site
+                Link to redirect user to the Maya payment site
               </li>
             </ul>
-            <p class="h5">17. User Profile Screen</p>
-            <ul>
-              <li>
-                Navigation bar at the top
-              </li>
-              <li>
-                Display of user information such as their name (text concatenated from first name, middle name, and last name), email, phone number, and birthday
-              </li>
-              <li>
-                Student side: displays information of the student’s id and course
-              </li>
-              <li>
-                Edit Profile Picture button
-              </li>
-              <li>
-                Change Password button to open the Change Password modal
-              </li>
-              <li>
-                Change Password modal:
-              </li>
-              <ul>
-                <li>
-                  Form
-                </li>
-                <li>
-                  Fields needed are Old Password, New Password, and Confirm Password
-                </li>
-                <li>
-                  Cancel and Confirm button
-                </li>
-              </ul>
-            </ul>
-            <p class="h5">18. Staff Register Screen</p>
-            <ul>
-              <li>
-                Only for administrator
-              </li>
-              <li>
-                Navigation bar at the top
-              </li>
-              <li>
-                Displays a form to filled up to create an account for a teacher/staff with the following fields:
-              </li>
-              <ul>
-                <li>
-                  First Name
-                </li>
-                <li>
-                  Middle Name
-                </li>
-                <li>
-                  Last Name
-                </li>
-                <li>
-                  Birthdate
-                </li>
-                <li>
-                  Role dropdown
-                </li>
-                <li>
-                  E-mail
-                </li>
-                <li>
-                  Phone Number
-                </li>
-                <li>
-                  Password
-                </li>
-                <li>
-                  Confirm Password
-                </li>
-                <li>
-                  Register button
-                </li>
-              </ul>
-
-            </ul>
+            <p>
+              NOTE: Clicking the link will not really redirect the user to the Enrollment Status screen but toward its original purpose, the Maya payment site. For now, it is only redirected to the Enrollment Status screen to show the screen’s design. 
+            </p>
             <p class="h5">19. Enrollment Requests Screen</p>
             <ul>
               <li>
                 Only for administrator
               </li>
               <li>
-                Navigation bar at the top
+                Navigation bar for administrators at the top
               </li>
               <li>
                 Search user field
+              </li>
+              <li>
+                End Enrollment button to open the Confirm End Enrollment modal
               </li>
               <li>
                 End Enrollment Modal
@@ -1012,7 +1023,7 @@
                 Displays information about each student such as their ID, name, course, email, phone number, timestamp, status, and remarks
               </li>
               <li>
-                Button under the remarks column that pops up a modal to add remarks to a student
+                Button under the remarks column that opens a Remarks modal to add remarks to a student
               </li>
               <li>
                 Remarks Modal 
@@ -1025,7 +1036,7 @@
                   A text field to leave a remark for the student’s enrollment
                 </li>
                 <li>
-                  A status dropdown to choose whether the student has been accepted or rejected
+                  A dropdown to choose the status of a student whether the student has been accepted, rejected, or needs revisions
                 </li>
                 <li>
                   Submit button
@@ -1035,16 +1046,105 @@
                 </li>
               </ul>
             </ul>
-            <p class="h5">20. View User Accounts Screen</p>
+            <p class="h5">20. View Enrollment Period Screen</p>
+            <ul>
+              <li>
+                Only for administrators
+              </li>
+              <li>
+                Navigation bar for administrators at the top
+              </li>
+              <li>
+                A form to specifically search the enrollment period
+              </li>
+              <ul>
+                <li>
+                  Fields needed are Course, and Batch and Year dropdowns
+                </li>
+                <li>
+                  Search button
+                </li>
+              </ul>
+              <li>
+                Displays a table listing all the courses offered during the searched enrollment period with informations such as Course, Schedule, and Number of Students Enrolled
+              </li>
+            </ul>
+            <p class="h5">21. User Profile Screen</p>
+            <ul>
+              <li>
+                Navigation bar at the top
+              </li>
+              <li>
+                Display of user information like their photo, name, email, phone number, and birthday of the user
+              </li>
+              <ul>
+                <li>
+                  STUDENT SIDE: Also displays the student ID and course
+                </li>
+              </ul>
+              <li>
+                Edit Profile Picture button
+              </li>
+              <li>
+                Change Password button to open the Change Password modal
+              </li>
+              <li>
+                Change Password modal:
+              </li>
+              <ul>
+                <li>
+                  Form
+                </li>
+                <li>
+                  Fields needed are Old Password, New Password, and Confirm Password
+                </li>
+                <li>
+                  Cancel and Confirm button
+                </li>
+              </ul>
+            </ul>
+            <p class="h5">22. Staff Register Screen</p>
             <ul>
               <li>
                 Only for administrator
               </li>
               <li>
-                Navigation bar at the top
+                Navigation bar for administrators at the top
               </li>
               <li>
-                Displays the list of all users inside a table
+                Form to create an account for a teacher/staff
+              </li>
+              <ul>
+                <li>
+                  Fields needed are First Name, Middle Name, Last Name, Birthdate, Role dropdown (Teacher or Admin), E-mail, Phone Number, Password, and Confirm Password
+                </li>
+              </ul>
+              <li>
+                A Register button that pops up the Register Notify modal
+              </li>
+              <li>
+                Register Notify modal
+              </li>
+              <ul>
+                <li>
+                  Displays message that confirms the creation of the user
+                </li>
+                <li>
+                  Close button
+                </li>
+              </ul>
+              
+            </ul>
+            <p class="h5">23. View User Accounts Screen</p>
+            <ul>
+              <li>
+                Only for administrator
+              </li>
+              <li>
+                Navigation bar for administrators at the top
+              </li>
+              <li>
+                Displays a table listing all users
               </li>
               <li>
                 Search field
@@ -1053,28 +1153,69 @@
                 Has a switch between “Students” and “Teachers” to show which type of users to display inside the table
               </li>
               <li>
-                Shows the information of the users such as their ID, concatenated name, course of students, email, phone number, and status whether they are passive or active
+                Shows the information of the users such as their ID, concatenated Name, Email, Phone Number, and Status whether they are passive or active
               </li>
               <li>
-                Highlights the user’s row on hover with the mouse and is made clickable to be able to manage the information of that user
+                VIEW STUDENT: Also displays the student’s Student ID and Course
+              </li>
+              <li>
+                Highlights the user’s row on hover of the mouse and can be clickable to navigate to the Manage User screen to manage the information of the user
               </li>
             </ul>
-            <p class="h5">21. Manage User Screen</p>
+            <p class="h5">24. Manage User Screen</p>
             <ul>
               <li>
                 Only for administrator
               </li>
               <li>
-                Navigation bar at the top
+                Navigation bar for administrators at the top
               </li>
               <li>
-                Display of user profile and user credentials such as their name (text concatenated from first name and last name), email, phone number, birthday, course, and status
+                Go Back button to redirect back to the View User Accounts screen
               </li>
+              <li>
+                MANAGE STUDENT PROFILE
+              </li>
+              <ul>
+                <li>
+                  Displays profile picture and user credentials such as their Name (concatenated text from first and last name), Student ID, Email, Phone Number, Course, Birthday, and Status
+                </li>
+              </ul>
+              <li>
+                MANAGE TEACHER PROFILE
+              </li>
+              <ul>
+                <li>
+                  Displays profile picture and user credentials such as their Name (concatenated text from first and last name), Birthday, Email, Phone Number, and Status
+                </li>
+              </ul>
+              <li>
+                A button to pop up the Edit Profile modal which allows the admin to edit the user’s details
+              </li>
+              <li>
+                Edit User Profile Modal
+              </li>
+              <ul>
+                <li>
+                  Form
+                </li>
+                <ul>
+                  <li>
+                    Fields needed are First Name, Middle Name, Last Name, Birthdate, Email, Phone Number, Course, and a Status dropdown
+                  </li>
+                  <li>
+                    EDIT STUDENT PROFILE: Also contains the Course field
+                  </li>
+                </ul>
+                <li>
+                  Cancel and Update Button
+                </li>
+              </ul>
               <li>
                 Options to edit or remove the profile picture of the user
               </li>
               <li>
-                Ability to reset the user’s password upon proof of validation through contacting
+                Reset Password button to open the Reset Password modal
               </li>
               <li>
                 Reset Password Modal
@@ -1094,35 +1235,17 @@
                 </li>
               </ul>
               <li>
-                Edit Profile Modal
+                Option to block a user which pops up the Confirm Block modal
+              </li>
+              <li>
+                Confirm Block Modal
               </li>
               <ul>
-                <li>
-                  First Name Field
-                </li>
-                <li>
-                  Middle Name Field
-                </li>
-                <li>
-                  Birthdate Field
-                </li>
-                <li>
-                  Last Name Field
-                </li>
-                <li>
-                  E-mail Field
-                </li>
-                <li>
-                  Phone Number Field
-                </li>
-                <li>
-                  Status dropdown
-                </li>
                 <li>
                   Cancel Button
                 </li>
                 <li>
-                  Update Button
+                  Confirm Button
                 </li>
               </ul>
             </ul>
