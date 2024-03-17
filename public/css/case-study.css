@@ -47,6 +47,41 @@ p, li{
     text-indent: 3rem;
 }
 
+.note{
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.student{
+    color: black;
+    font-weight: bold;
+    background-color: rgb(159, 197, 232, 0.8);
+    padding: 0 5px;
+}
+
+.teacher{
+    color: black;
+    font-weight: bold;
+    background-color: rgb(221, 126, 107, 0.8);
+    padding: 0 5px;
+}
+
+.admin{
+    color: black;
+    font-weight: bold;
+    background-color: rgba(213, 166, 189, 0.8);
+    padding: 0 5px;
+}
+
+.pe-0{
+    padding-right: 0;
+}
+
+.ps-0{
+    padding-left: 0;
+}
+
 /* 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <br><br>

@@ -254,7 +254,7 @@
                 Form
                 <ul>
                   <li>
-                    Fields neede are Email and Password
+                    Fields needed are Email and Password
                   </li>
                 </ul>
               </li>
@@ -265,19 +265,20 @@
                 Login button - redirects to Home Page screen
               </li>
               <li>
-                Link to Register button screen
+                Link to Register screen
               </li>
               <li>
                 Forgot Password Modal
                 <ul>
-                  <li>Asks for user's email used to sign up the account</li>
+                  <li>Asks for the user's email used to sign up the account</li>
                   <li>Field for the email address</li>
                   <li>Reset Password button</li>
                 </ul>
               </li>
               
             </ul>
-            <p>NOTE: Clicking the Reset Password button will not directly redirect the user to the Reset Password Link screen, but it is a screen that administrators will only give to the student’s email as a link. For now, it is only directly redirected to the Reset Password Link screen to show the screen’s design. </p>
+            <p class="note"><b>NOTE:</b> Clicking the Reset Password button will not directly redirect the user to the Reset Password Link screen, but it is a screen that administrators will only give to the student’s email as a link. For now, it is only directly redirected to the Reset Password Link screen to show the screen’s design. </p>
+
             <p class="h5">2. Register Screen</p>
             <ul>
               <li>
@@ -288,7 +289,7 @@
                 Link to Login screen
               </li>
               <li>
-                Submit to button to open the OTP modal
+                Submit button to open the OTP modal
               </li>
               <li>
                 OTP Modal
@@ -301,6 +302,7 @@
                 </ul>
               </li>
             </ul>
+
             <p class="h5">3. Reset Password Link Screen</p>
             <ul>
               <li>
@@ -315,6 +317,7 @@
                 </li>
               </ul>
             </ul>
+
             <p class="h5">4. Home Page Screen (Student)</p>
             <ul>
               <li>
@@ -333,11 +336,12 @@
                 <ul><li>Date and Time announced</li></ul>
               </li>
             </ul>
+
             <p class="h5">5. Home Page Screen (Teacher)</p>
             <ul>
               <li>
                 Navigation bar (navbar) at the top
-                <ul><li>Contents of the navbar are the client logo at the far left, navigation links (“Home”, “Enrollment”, “Grades”, “Payment”, “Documents”) at the center, and notification button and user account drop down at the far right. User account dropdown contains the options “View Profile” and “Logout”</li></ul>
+                <ul><li>Contents of the navbar are the client logo at the far left, navigation links (“Home”, “Enrollment”) at the center, and notification button and user account drop down at the far right. User account dropdown contains the options “View Profile” and “Logout”</li></ul>
               </li>
               <li>
                 Create an announcement button to open the Create Post modal
@@ -394,6 +398,7 @@
                 </ul>
               </li>
             </ul>
+
             <p class="h5">6. Home Page Screen (Admin)</p>
             <ul>
               <li>
@@ -408,7 +413,7 @@
                 Create an announcement button to open the Create Post modal
               </li>
               <li>
-                Archives button to redirect the user to the Archived Posts screen.
+                Archives button to redirect the user to the Archived Posts screen
               </li>
               <li>
                 Display all posted announcements and ordered by the most recent time and date
@@ -485,6 +490,7 @@
                 
               </li>
             </ul>
+
             <p class="h5">7. Archived Posts Screen </p>
             <ul>
               <li>
@@ -523,6 +529,7 @@
                 </ul>
               </li>
             </ul>
+
             <p class="h5">8. Enrollment Form Screen</p>
             <ul>
               <li>
@@ -551,6 +558,7 @@
                 Next button - redirects to Maya Payment Form screen
               </li>
             </ul>
+
             <p class="h5">9. Enrollment Status Screen</p>
             <ul>
               <li>
@@ -592,9 +600,10 @@
                 Displays the administrator contact informations like contact number and email address
               </li>
             </ul>
-            <p>
-              NOTE: Clicking the Enrollment Status container, will not change the student’s enrollment status from complete to pending or vice versa. This is just to show the screen’s design difference between a Completed Enrollment Status and a Pending Enrollment Status. 
+            <p class="note">
+              <b>NOTE:</b> Clicking the Enrollment Status container, will not change the student’s enrollment status from complete to pending or vice versa. This is just to show the screen’s design difference between a Completed Enrollment Status and a Pending Enrollment Status. 
             </p>
+
             <p class="h5">10. Enrollment: View Schedule Screen</p>
             <ul>
               <li>
@@ -604,7 +613,8 @@
                 Settings, Next, and Previous button
               </li>
               <li>
-                ADMIN SIDE: Robot button for admins to get assisted with AI (chat) to create a schedule plot with available teachers and rules/guidelines.              </li>
+                <span class="admin">ADMIN SIDE:</span> Robot button for admins to get assisted with AI (chat) to create a schedule plot with available teachers and rules/guidelines.
+              </li>
               <li>
                 Year and Month dropdown for filtering
               </li>
@@ -637,19 +647,19 @@
                       Displays event information like Event Title, Event Location, Time, Organizer, and Notes
                     </li>
                     <li>
-                      ADMIN SIDE: Also displays a Repeat field info
+                      <span class="admin">ADMIN SIDE:</span> Also displays a Repeat field info
                     </li>
                     <li>
                       Students and Teachers cannot edit the event information, only admins.
                     </li>
                     <li>
-                      ADMIN SIDE: Color palette button to change the event tile’s color
+                      <span class="admin">ADMIN SIDE:</span> Color palette button to change the event tile’s color
                     </li>
                     <li>
-                      ADMIN SIDE: Save Event and Delete Event button. Clicking the Save Event button shows the Save Notification message. While clicking the Delete  Event button displays the Discard Event confirmation message.
+                      <span class="admin">ADMIN SIDE:</span> Save Event and Delete Event button. Clicking the Save Event button shows the Save Notification message. While clicking the Delete  Event button displays the Discard Event confirmation message.
                     </li>
                     <li>
-                      STUDENT SIDE: View Classmates button to open the View Classmates modal
+                      <span class="student">STUDENT SIDE:</span> View Classmates button to open the View Classmates modal
                     </li>
                     <li>
                       View Classmates modal:
@@ -663,7 +673,7 @@
                       </ul>
                     </li>
                     <li>
-                      TEACHER and ADMIN SIDE: View Students button to open the View Students modal
+                      <span class="teacher pe-0">TEACHER a</span><span class="admin ps-0">nd ADMIN SIDE:</span> View Students button to open the View Students modal
                     </li>
                     <li>
                       View Students modal:
@@ -679,13 +689,14 @@
                         Download CSV/List button
                       </li>
                       <li>
-                        ADMIN SIDE: Contains an Import CSV button, search bar to search a student by name, id, or email, and add button at the top of the table 
+                        <span class="admin">ADMIN SIDE:</span> Contains an Import CSV button, search bar to search a student by name, id, or email, and add button at the top of the table 
                       </li>
                     </ul>
                   </ul>
                 </li>
               </ul>
             </ul>
+
             <p class="h5">11. Enrollment: View Schedule by Week Screen</p>
             <ul>
               <li>
@@ -695,7 +706,7 @@
                 Settings, Next, and Previous button
               </li>
               <li>
-                ADMIN SIDE: Robot button for admins to get assisted with AI (chat) to create a schedule plot with available teachers and rules/guidelines.              </li>
+                <span class="admin">ADMIN SIDE:</span> Robot button for admins to get assisted with AI (chat) to create a schedule plot with available teachers and rules/guidelines.              </li>
               <li>
                 Year and Month dropdown for filtering
               </li>
@@ -706,6 +717,7 @@
                 Displays the schedule in a calendar view by week. Can click each tile to open the Date Select Modal
               </li>
             </ul>
+
             <p class="h5">12. Teaching Load Screen</p>
             <ul>
               <li>
@@ -718,7 +730,7 @@
                 Shows the name of the user
               </li>
               <li>
-                Displays a table with informations like Course, Schedule, Room, Number of Hours, Number of students
+                Displays a table with informations like Course, Schedule, Room, Number of Hours, and Number of students
               </li>
               <li>
                 View students button at every row of the table body to open the List of Students modal
@@ -738,6 +750,7 @@
                 </li>
               </ul>
             </ul>
+
             <p class="h5">13. Study Load Screen</p>
             <ul>
               <li>
@@ -760,6 +773,7 @@
               </li>
               
             </ul>
+
             <p class="h5">14. Course Assignment Screen</p>
             <ul>
               <li>
@@ -797,19 +811,23 @@
                   Submit button to show a successful course creation/update notification message
                 </li>
                 <li>
-                  The Update Course modal will reflect and contain values in the form fields based on which course the admin chose to edit.
+                  The Update Course modal will reflect and contain values in the form fields based on which course the admin chose to edit
                 </li>
                 <li>
-                  If the fields of the form contain values and the admin attempts to exit the modal without submitting the form, the discard changes confirmation message will pop up.
+                  If the fields of the form contain values and the admin attempts to exit the modal without submitting the form, the discard changes confirmation message will pop up
                 </li>
                 <li>
-                  The Course Creation modal can be closed when clicking outside, while the Update Course modal cannot and stays on the user’s screen. The only way to close the Update Course modal is through the Close and Submit button.
+                  The Course Creation modal can be closed when clicking outside, while the Update Course modal cannot and stays on the user’s screen. The only way to close the Update Course modal is through the Close and Submit button
                 </li>
               </ul>
 
             </ul>
+
             <p class="h5">15. Assessment Screen</p>
             <ul>
+              <li>
+                Only for students and administrators
+              </li>
               <li>
                 Navigation bar at the top
               </li>
@@ -821,7 +839,7 @@
                   Course, Batch, and Year dropdown
                 </li>
                 <li>
-                  ADMIN SIDE: Another field is needed for Name
+                  <span class="admin">ADMIN SIDE:</span> Another field is needed for Name
                 </li>
               </ul>
               <li>
@@ -837,7 +855,7 @@
                 Displays a table that shows the list of fees a student has for the specific period searched such as “Description”, “Amount”, “Net Assessment”, “Total Payments”, and “Remaining Balance”
               </li>
               <li>
-                ADMIN SIDE:
+                <span class="admin">ADMIN SIDE:</span>
               </li>
               <ul>
                 <li>
@@ -870,7 +888,7 @@
                 </ul>
               </ul>
               <li>
-                STUDENT SIDE: Proceed to Payment button to redirect user to the Maya Payment Form screen
+                <span class="student">STUDENT SIDE:</span> Proceed to Payment button to redirect user to the Maya Payment Form screen
               </li>
 
              
@@ -903,13 +921,14 @@
                 </li>
               </ul>
             </ul>
+
             <p class="h5">16. Ledger Screen</p>
             <ul>
               <li>
                 Navigation bar at the top
               </li>
               <li>
-                ADMIN SIDE: A form to search for a student's ledger
+                <span class="admin">ADMIN SIDE:</span> A form to search for a student's ledger
               </li>
               <ul>
                 <li>
@@ -932,6 +951,7 @@
                 Displays a table with information such as “Date”, “Time”, “Payment Method”, “Balance”, “Type”, and “Remarks”
               </li>
             </ul>
+
             <p class="h5">17. Maya Payment Screen</p>
             <ul>
               <li>
@@ -941,7 +961,7 @@
                 Navigation bar for students at the top
               </li>
               <li>
-                Displays aMaya Payment Form with the following fields:
+                Displays a Maya Payment Form with the following fields:
               </li>
               <ul>
                 <li>
@@ -970,6 +990,7 @@
                 Submit button to redirect the user to the Redirect to Maya screen
               </li>
             </ul>
+
             <p class="h5">18. Redirect to Maya Screen</p>
             <ul>
               <li>
@@ -985,9 +1006,10 @@
                 Link to redirect user to the Maya payment site
               </li>
             </ul>
-            <p>
-              NOTE: Clicking the link will not really redirect the user to the Enrollment Status screen but toward its original purpose, the Maya payment site. For now, it is only redirected to the Enrollment Status screen to show the screen’s design. 
+            <p class="note">
+              <b>NOTE:</b> Clicking the link will not really redirect the user to the Enrollment Status screen but toward its original purpose, the Maya payment site. For now, it is only redirected to the Enrollment Status screen to show the screen’s design. 
             </p>
+
             <p class="h5">19. Enrollment Requests Screen</p>
             <ul>
               <li>
@@ -1046,6 +1068,7 @@
                 </li>
               </ul>
             </ul>
+
             <p class="h5">20. View Enrollment Period Screen</p>
             <ul>
               <li>
@@ -1069,6 +1092,7 @@
                 Displays a table listing all the courses offered during the searched enrollment period with informations such as Course, Schedule, and Number of Students Enrolled
               </li>
             </ul>
+
             <p class="h5">21. User Profile Screen</p>
             <ul>
               <li>
@@ -1079,7 +1103,7 @@
               </li>
               <ul>
                 <li>
-                  STUDENT SIDE: Also displays the student ID and course
+                  <span class="student">STUDENT SIDE:</span> Also displays the student ID and course
                 </li>
               </ul>
               <li>
@@ -1103,6 +1127,7 @@
                 </li>
               </ul>
             </ul>
+
             <p class="h5">22. Staff Register Screen</p>
             <ul>
               <li>
@@ -1135,6 +1160,7 @@
               </ul>
               
             </ul>
+
             <p class="h5">23. View User Accounts Screen</p>
             <ul>
               <li>
@@ -1156,12 +1182,13 @@
                 Shows the information of the users such as their ID, concatenated Name, Email, Phone Number, and Status whether they are passive or active
               </li>
               <li>
-                VIEW STUDENT: Also displays the student’s Student ID and Course
+                <b><i>VIEW STUDENT:</i></b> Also displays the student’s Student ID and Course
               </li>
               <li>
                 Highlights the user’s row on hover of the mouse and can be clickable to navigate to the Manage User screen to manage the information of the user
               </li>
             </ul>
+            
             <p class="h5">24. Manage User Screen</p>
             <ul>
               <li>
@@ -1171,10 +1198,10 @@
                 Navigation bar for administrators at the top
               </li>
               <li>
-                Go Back button to redirect back to the View User Accounts screen
+                Go Back button to redirect the admin back to the View User Accounts screen
               </li>
               <li>
-                MANAGE STUDENT PROFILE
+                <b><i>MANAGE STUDENT PROFILE</i></b>
               </li>
               <ul>
                 <li>
@@ -1182,7 +1209,7 @@
                 </li>
               </ul>
               <li>
-                MANAGE TEACHER PROFILE
+                <b><i>MANAGE TEACHER PROFILE</i></b>
               </li>
               <ul>
                 <li>
@@ -1204,7 +1231,7 @@
                     Fields needed are First Name, Middle Name, Last Name, Birthdate, Email, Phone Number, Course, and a Status dropdown
                   </li>
                   <li>
-                    EDIT STUDENT PROFILE: Also contains the Course field
+                    <b><i>EDIT STUDENT PROFILE:</i></b> Also contains the Course field
                   </li>
                 </ul>
                 <li>
@@ -1286,10 +1313,10 @@
                   After filling in the enrollment form, Polano is navigated to the Maya Payment Form Screen. He fills in his payment details such as his name, email address, and phone number. He also selects an option on the dropdown menu for the type of fee and the amount he will pay. Once Polano verifies the details, he clicks the button to submit it.
                 </li>
               </ul>
-              <p class="h5">6. Payment Redirect Screen</p>
+              <p class="h5">6. Redirect to Maya Screen</p>
               <ul>
                 <li>
-                  After clicking the confirm button on the Payment form, Polano is navigated to the Payment Redirect Screen where he sees a countdown that indicates that he will be redirected to the Maya payment site below the logo of the application. After waiting for more than 5 seconds, the page has not redirected him yet due to his slow internet connection. So Polano click the “Click Here” link to immediately go to the payment site.
+                  After clicking the confirm button on the Payment form, Polano is navigated to the Redirect to Maya Screen where he sees a countdown that indicates that he will be redirected to the Maya payment site below the logo of the application. After waiting for more than 5 seconds, the page has not redirected him yet due to his slow internet connection. So Polano click the “Click Here” link to immediately go to the payment site.
                 </li>
               </ul>
               <p class="h5">7. Enrollment Status Screen</p>
@@ -1433,6 +1460,9 @@
           <p class="text-indent">
             Below is the lo-fi prototype of Eduops which composes of sketches ang placeholders of images and descriptions which serves as the draft blueprint of our system for the system vision our company had in mind for our system together with the arrows which would serve as the guides regarding the navigation flow for all the different types of users.
           </p>
+          <p class="text-indent">
+            To access the file for our Figma Lo-fi Prototype, <a href="https://www.figma.com/file/3sDZa58I0oMCIZJrjIUflD/2205-SDG2-Wireframe?type=design&node-id=0%3A1&mode=design&t=WUinHycbF9HSzrmB-1">Click here!</a>
+          </p>
 
           <br>
 
@@ -1474,6 +1504,11 @@
           <p class="text-indent">
             Below is the hifi-prototype of Eduops. You may interact with the buttons and switch flows between the different users.
           </p>
+          <p class="text-indent">
+            To view our Hi-fi Prototype, <a href="https://www.figma.com/file/SXqGDDUjXkTQPbVbNw87R3/Wireframe?type=design&node-id=0%3A1&mode=design&t=4BlhkytOeTm5aaBZ-1">Click here</a> to visit our Figma file
+          </p>
+
+          <br>
           
           <ul class="nav nav-tabs" id="myTab" role="tablist" style="background-color: #2a2f34; border-bottom-color: #D9D9D9;">
             <li class="nav-item">
