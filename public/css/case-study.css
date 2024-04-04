@@ -140,12 +140,12 @@ p, li{
     justify-content: center;
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
+    text-align: center;
     line-height: 1.2rem;
     inset: 8px;
     background: #292939;
     border-radius: 15px;
     border: 5px solid #25252b;
-    /* filter: blur(1px); */
 }
 
 /* 
