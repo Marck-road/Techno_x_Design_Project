@@ -82,6 +82,72 @@ p, li{
     padding-left: 0;
 }
 
+.box{
+    position: relative;
+    box-sizing: border-box;
+    height: 100px;
+    background: repeating-conic-gradient(
+        from var(--aa),
+        #fff0e7 0%,
+        #fff0e7 5%,
+        transparent 5%,
+        transparent 40%,
+        #fff0e7 50%
+    );
+    animation: animate 6s linear infinite;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.5);
+    border-radius: 20px;
+}
+
+@property --aa {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate {
+    0%{
+        --aa: 0deg;
+    }
+    100%{
+        --aa: 360deg;
+    }
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(
+        from var(--aa),
+        #580c0c 0%,
+        #580c0c 5%,
+        transparent 5%,
+        transparent 40%,
+        #580c0c 50%
+    );
+    animation: animate 4s linear infinite;
+    animation-delay: 2s;
+    border-radius: 20px;
+}
+
+.box::after{
+    content: "Chosen SDG: Quality Education";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    inset: 8px;
+    background: #292939;
+    border-radius: 15px;
+    border: 5px solid #25252b;
+    /* filter: blur(1px); */
+}
+
 /* 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <br><br>
