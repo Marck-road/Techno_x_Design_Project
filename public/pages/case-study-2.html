@@ -1570,10 +1570,46 @@
 
       <!-- 8. Feedback Questionnaire -->
       <div class="container py-3">
-        <h1 class="pb-3">8. Feedback Questionnaire:</h1>
+        <h1 class="pb-3">8. Feedback Questionnaire:</h1>        
+        <form>
+          <div>
+            <div class="row">
+              <div class="col h5" style="width: 100px;">Name (Optional):</div>
+              <div class="col h5" style="margin-left: 40%;">Age:</div>
+              <div class="w-100"></div>
+              <div class="col">
+                <span class="h5">Sex:</span>
+                <input type="radio" name="sex" value="Male" class="ml-2">
+                <label for="male">Male</label>
+                <input type="radio" name="sex" value="Female" class="ml-2">
+                <label for="female">Female</label>
+              </div>
+              <div class="col h5" style="margin-left: 40%;">Occupation:</div>
+            </div>
+          </div>
 
-        <div class="table-responsive">
-          <table class="table table-bordered table-dark" style="border-color: white;">
+          <div class="mt-4">
+            <h5>Have you ever used a similiar application?</h5>
+            <input type="radio" name="used_similiar" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="used_similiar" value="no" class="ml-4">
+            <label for="no">No</label>
+          </div>
+
+          <div class="mt-4">
+            <h5>Technology Literacy</h5>
+            <input type="radio" name="literacy" value="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" name="literacy" value="intermediate" class="ml-5">
+            <label for="no">Intermediate</label>
+            <input type="radio" name="literacy" value="expert" class="ml-5">
+            <label for="expert">Expert</label>
+          </div>
+            
+        </form>
+          
+          <div class="table-responsive mt-4">
+            <table class="table table-bordered" style="background-color: #2a2f34; color: white;">
             <!-- Table Headers -->
             <thead>
               <tr class="text-center">
@@ -1585,15 +1621,15 @@
                 <th scope="col" class="align-middle">Strong Agree</th>
               </tr>
             </thead>
-            <tbody class="ml-5">
+            <tbody>
               <!-- General Impression -->
               <tr>
-                <td colspan="6" class="ml-n5">
+                <td colspan="6">
                   I. General Impression
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   1. I have a good impression of the prototype.
                 </td>
                 <td></td>
@@ -1603,7 +1639,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   2. I find the website very useful.
                 </td>
                 <td></td>
@@ -1613,7 +1649,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   3. The website is visually appealing to my eyes.
                 </td>
                 <td></td>
@@ -1623,7 +1659,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   4. The website is very convenient.
                 </td>
                 <td></td>
@@ -1633,7 +1669,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   5. I will likely use the application based on my experience with the prototype.
                 </td>
                 <td></td>
@@ -1643,7 +1679,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   6. The prototype exceeds expectations.
                 </td>
                 <td></td>
@@ -1653,7 +1689,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   7. I would recommend others to use this system.
                 </td>
                 <td></td>
@@ -1663,7 +1699,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   8. I like the website.
                 </td>
                 <td></td>
@@ -1679,7 +1715,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   9. I am satisfied with the experience of the application.
                 </td>
                 <td></td>
@@ -1689,7 +1725,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   10. The interface was user-friendly.
                 </td>
                 <td></td>
@@ -1699,7 +1735,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   11. I find the navigation of the website easy.
                 </td>
                 <td></td>
@@ -1709,7 +1745,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   12. I did not find the website confusing or difficult to use.
                 </td>
                 <td></td>
@@ -1725,7 +1761,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   13. The color scheme of the website blends well together.
                 </td>
                 <td></td>
@@ -1735,7 +1771,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   14. The color scheme is very pleasing to the eye.
                 </td>
                 <td></td>
@@ -1745,7 +1781,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   15. I like the color scheme of the application.
                 </td>
                 <td></td>
@@ -1755,7 +1791,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   16. The text corresponds well with the background.
                 </td>
                 <td></td>
@@ -1765,7 +1801,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   17. The font style used in the website is visually appealing.
                 </td>
                 <td></td>
@@ -1775,7 +1811,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   18. The font size used is readable.
                 </td>
                 <td></td>
@@ -1785,7 +1821,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   19. The layout of the website is structured in a well-organized manner.
                 </td>
                 <td></td>
@@ -1795,7 +1831,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   20. I like the interfaces of the application.
                 </td>
                 <td></td>
@@ -1805,7 +1841,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   21. Colors, fonts, and layouts are consistent throughout the website.
                 </td>
                 <td></td>
@@ -1821,7 +1857,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   22. The functionality and features of the website works as expected.
                 </td>
                 <td></td>
@@ -1831,7 +1867,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   23. The features of the website are all complete.
                 </td>
                 <td></td>
@@ -1841,7 +1877,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   24. The functions of the website are all applicable.
                 </td>
                 <td></td>
@@ -1851,7 +1887,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   25. The functionality of the pages can be easily understood.
                 </td>
                 <td></td>
@@ -1861,7 +1897,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   26. I did not encounter any bugs or errors while using the website.
                 </td>
                 <td></td>
@@ -1878,7 +1914,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   27. All the available content of the website is relevant.
                 </td>
                 <td></td>
@@ -1888,7 +1924,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   28. The instructions and labels were clear and understandable.
                 </td>
                 <td></td>
@@ -1898,7 +1934,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   29. The information of the pages is not overwhelming.
                 </td>
                 <td></td>
@@ -1908,7 +1944,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   30. The information provided was helpful.
                 </td>
                 <td></td>
@@ -1918,7 +1954,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>
+                <td class="pl-4">
                   31. The content is readable and is easily understood.
                 </td>
                 <td></td>
@@ -1928,18 +1964,15 @@
                 <td></td>
               </tr>
 
-
-
-
             </tbody>
           </table>
           <div>
             <p>Comments:</p>
-            <div style="background-color: aliceblue; height: 120px;"></div>
+            <div class="bg-dark border" style="height: 120px;"></div>
           </div>
           <div class="mt-4">
             <p>Suggestions:</p>
-            <div style="background-color: aliceblue; height: 120px;"></div>
+            <div class="bg-dark border" style="height: 120px;"></div>
           </div>
         </div>
       </div>
