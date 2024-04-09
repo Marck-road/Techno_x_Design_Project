@@ -31,6 +31,9 @@ h1{
 
 #sdg2{
   border-color: darkred;
+  h2{
+    margin-bottom: 20px;
+  }
 }
 
 #sdg1:hover{
@@ -51,6 +54,10 @@ h1{
 
 #sdg2:hover h2{
   font-size: 36px;
+}
+
+#sdg2:hover h1{
+  font-size: 2.9rem;
 }
 
 #sdg1:hover img{
