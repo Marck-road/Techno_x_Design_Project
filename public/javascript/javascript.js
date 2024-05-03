@@ -19,3 +19,8 @@ $(document).ready(function () {
 });
 
 $('.banner').carousel()
+
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.toggle('show');
+});
+

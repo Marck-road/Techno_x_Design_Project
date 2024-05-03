@@ -7,7 +7,13 @@
       
       <link rel="icon" type="image/x-icon" href="../../assets/images/alt-logo3-no-text.png">
       <link rel="stylesheet" href="../css/case-study.css">
-      
+
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
@@ -20,9 +26,9 @@
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse justify-content-center" id="navbarText">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item mr-3">
@@ -44,6 +50,7 @@
             </ul>
         </div>
     </nav>
+
 
     <!-- BANNER -->
     <div class="container-fluid d-flex flex-column text-center justify-content-center align-items-center" style="height: 55vh;">
@@ -81,9 +88,55 @@
 
     <div class="container" id="case-study">
       <hr style="background-color: red;" class="hr-blurry">
-     
+
+    <div class="d-flex justify-content-start fixed-bottom mb-5 ml-3" style="z-index: 100;"> 
+      <button class="d-flex justify-content-center navbar-toggler rounded-circle" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-label="Toggle navigation" style="background-color: #2a2f34; height: 50px; width: 50px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </button>
+    </div>
+    
+    
+    <div class="flex align-items-center navbar-collapse" id="sidebar" style="z-index: 10; background-color: #353A40;">
+      <ul class="navbar-nav ml-auto" style="color: white;">
+        <!-- Your sidebar content here -->
+          <li class="nav-item active" style="text-align: left;">
+              <a class="nav-link sidebar-link" href="#intro" style="color: white;">Introduction</a>
+          </li>
+          <li class="nav-item" style="text-align: left;">
+              <a class="nav-link sidebar-link" href="#proj-bg">Project Background</a>
+          </li>
+          <li class="nav-item" style="text-align: left;">
+              <a class="nav-link sidebar-link" href="#prob-stat">Problem Statement</a>
+          </li>
+          <li class="nav-item" style="text-align: left;">
+              <a class="nav-link sidebar-link" href="#user-res">User Research</a>
+          </li>
+          <li class="nav-item" style="text-align: left;">
+            <a class="nav-link sidebar-link" href="#ideation">Ideation & Brainstorming</a>
+          </li>
+          <li class="nav-item" style="text-align: left;">
+            <a class="nav-link sidebar-link" href="#prototyping">Prototyping</a>
+          </li>
+          <li class="nav-item" style="text-align: left;">
+            <a class="nav-link sidebar-link" href="#lessons">Lessons Learned</a>
+          </li>
+          <li class="nav-item" style="text-align: left;">
+            <a class="nav-link sidebar-link" href="#feedback">Feedback Questionnaire</a>
+          </li>
+          <li class="nav-item" style="text-align: left;">
+            <a class="nav-link sidebar-link" href="#synthesis">Synthesis</a>
+          </li>
+          <li class="nav-item" style="text-align: left;">
+            <a class="nav-link sidebar-link" href="#conc">Conclusion</a>
+          </li>
+          
+      </ul>
+    </div>
+  
       <!-- 1. Introduction -->
-      <div class="container py-3">
+      <div class="container py-3" id="intro">
         <h1 class="pb-3">1. Introduction:</h1>
         <p class="text-indent">
             It is important to provide quality education to students and make it an inclusive and equitable educational environment. Schools need to implement a proper working system that is understandable to all to ensure a hassle-free experience for students and staff.
@@ -103,7 +156,7 @@
       <hr style="background-color: red;" class="hr-blurry">
         
       <!-- 2. Project Background -->
-      <div class="container py-3">
+      <div class="container py-3" id="proj-bg">
         <h1 class="pb-3">2. Project Background:</h1>   
         <p class="text-indent">
           The purpose of this case study is to develop and implement an information management system called EduOps designed to streamline operations and improve the system at Sprach Institut. 
@@ -117,7 +170,7 @@
       <hr style="background-color: red;" class="hr-blurry">
 
       <!-- 3. Problem Statement -->
-      <div class="container py-3">
+      <div class="container py-3" id="prob-stat">
         <h1>3. Problem Statement:</h1>
         <p class="text-indent">
           Outdated or traditional educational system is a common problem that can negatively affect the efficiency and overall quality of education. This study aims to solve the following problems of an outdated system which include:
@@ -142,7 +195,7 @@
       <hr style="background-color: red;" class="hr-blurry">
 
       <!-- 4. User Research -->
-      <div class="container py-3">
+      <div class="container py-3" id="user-res">
         <h1 class="pb-3">4. User Research:</h1>
         
         <div class="ml-5">
@@ -198,7 +251,7 @@
       <hr style="background-color: red;" class="hr-blurry">
 
       <!-- 5. Ideation and Brainstorming -->
-      <div class="container py-3">
+      <div class="container py-3" id="ideation">
       <h1 class="pb-3">5. Ideation and Brainstorming:</h1>
         
       <div class="ml-5" style="color: white;">
@@ -233,7 +286,7 @@
       <hr style="background-color: red;" class="hr-blurry">
 
       <!-- 6. Prototyping -->
-      <div class="container py-3">
+      <div class="container py-3" id="prototyping">
         <h1 class="pb-3">6. Prototyping:</h1>
 
         <div class="container mt-3 ml-5">
@@ -1540,7 +1593,7 @@
       <hr style="background-color: red;" class="hr-blurry">
 
       <!-- 7. Lessons Learned -->
-      <div class="container py-3">
+      <div class="container py-3" id="lessons">
         <h1 class="pb-3">7. Lessons Learned:</h1>
         <div class="ml-5" style="color: white;">
           <i><h4>Cuyos</h4></i>
@@ -1569,7 +1622,7 @@
       <hr style="background-color: red;" class="hr-blurry">
 
       <!-- 8. Feedback Questionnaire -->
-      <div class="container py-3">
+      <div class="container py-3" id="feedback">
         <h1 class="pb-3">8. Feedback Questionnaire:</h1>  
         
         <h4>Introduction</h4>
@@ -2033,7 +2086,7 @@
 
       <!-- 9. Results, Analysis, & Solution -->
       <hr style="background-color: red;" class="hr-blurry">
-      <div class="container py-3">
+      <div class="container py-3" id="synthesis">
         <h1 class="pb-3">9. Synthesis of Feedback Session:</h1>
 
         <div class="container mt-3 ml-5">
@@ -2876,7 +2929,7 @@
 
       <!-- 10. Conclusion -->
       <hr style="background-color: red;" class="hr-blurry">
-      <div class="container py-3">
+      <div class="container py-3" id="conc">
         <h1 class="pb-3">10. Conclusion:</h1>
         <p class="text-indent">
           In conclusion, the case study allowed the team to explore the design process and properly design the system to achieve its primary goal of improving and giving quality education to the beneficiaries. Through multiple design thinking principles, the team was able to uncover new ideas and solve problems that would arise throughout the various stages of designing the system. Hence, it is always important to be flexible and open-minded so that everyone can consider each other's ideas. After designing EduOps, the team is hopeful that it would successfully improve the client's processes of their institution by providing them convenient access to information and efficient support in teaching and learning practices through the designed system.
@@ -2890,6 +2943,6 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+        
     </body>
     </html>
